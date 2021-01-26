@@ -1,0 +1,47 @@
+{
+    "name": "karlgama/buscador-cursos",
+    "description": "Buscador curso alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "karl Gama",
+            "email": "kaiquesilva49@hotmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "symfony/dom-crawler": "^4.2",
+        "symfony/css-selector": "^5.2"
+    },
+    "autoload": {
+        "classmap": [
+            "./Teste.php"
+        ],
+        "psr-4": {
+            "Alura\\BuscadorDeCursos\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "squizlabs/php_codesniffer": "*",
+        "phan/phan": "^4.0"
+    },
+
+    "scripts": {
+        "test": "phpunit tests/TesteBuscadorDeCursos.php",
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan": "phan --allow-polyfill-parser",
+        "check": [
+            "@phan",
+            "@cs",
+            "@test"
+        ],
+        "post-update-cmd": [
+            "@test"
+        ]
+    },
+    "scripts-descriptions": {
+        "test": "definição teste",
+        "check": "roda as verificações phan, cs, phpunit"
+    }
+}
