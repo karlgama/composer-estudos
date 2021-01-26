@@ -44,4 +44,4 @@
         "test": "definição teste",
         "check": "roda as verificações phan, cs, phpunit"
     }
-}
+} 
