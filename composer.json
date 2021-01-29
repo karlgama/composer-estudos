@@ -2,6 +2,7 @@
     "name": "karlgama/buscador-cursos",
     "description": "Buscador curso alura",
     "type": "library",
+    "version": "v1.0.0",
     "authors": [
         {
             "name": "karl Gama",
@@ -43,5 +44,7 @@
     "scripts-descriptions": {
         "test": "definição teste",
         "check": "roda as verificações phan, cs, phpunit"
-    }
-} 
+    },
+    "bin": ["buscar-cursos.php"]
+
+}
