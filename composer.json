@@ -44,6 +44,6 @@
         "test": "definição teste",
         "check": "roda as verificações phan, cs, phpunit"
     },
-    "bin": ["buscar-cursos.php"]
-
+    "bin": ["buscar-cursos.php"],
+    "license": "GPL-3.0-only"
 }
